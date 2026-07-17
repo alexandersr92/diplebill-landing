@@ -15,6 +15,7 @@ interface HeroProps {
 
 const TICKER_ITEMS = [
   'Facturación',
+  'Cierre de Caja',
   'Créditos',
   'Inventarios',
   'Sucursales',

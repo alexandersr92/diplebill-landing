@@ -42,6 +42,11 @@
           "description": "Emite facturas y tickets en segundos, con impresión térmica y funcionamiento offline."
         },
         {
+          "icon": "cash-register",
+          "title": "Cierre de Caja",
+          "description": "Arqueo diario por caja y sucursal: efectivo esperado contra contado, con las diferencias a la vista."
+        },
+        {
           "icon": "credit-card",
           "title": "Créditos",
           "description": "Vende a crédito, registra abonos y controla las cuentas por cobrar de cada cliente."
@@ -99,6 +104,19 @@
             "Descuentos por producto o por factura, y anulaciones controladas por permisos"
           ],
           "visual": "invoice"
+        },
+        {
+          "id": "cierre-caja",
+          "eyebrow": "Cierre de Caja",
+          "title": "Cierra el día con la caja cuadrada",
+          "description": "Al final de cada turno, DipleBill compara lo que debería haber en caja contra lo que se contó: fondo inicial, ventas en efectivo, abonos recibidos y retiros. Todo queda registrado, sin cuadernos ni calculadora.",
+          "bullets": [
+            "Arqueo de caja por turno, por caja y por sucursal",
+            "Efectivo esperado vs. contado con la diferencia calculada al centavo",
+            "Registro de retiros y gastos de caja durante el día",
+            "Historial de cierres con fecha, hora y responsable de cada uno"
+          ],
+          "visual": "cashclose"
         },
         {
           "id": "creditos",
@@ -218,6 +236,7 @@
             "1 Sucursal",
             "Usuarios y vendedores ilimitados",
             "Facturación e impresión térmica",
+            "Cierre y arqueo de caja",
             "Gestión de inventario",
             "Reportes de ventas"
           ],
@@ -279,6 +298,10 @@
         {
           "question": "¿La app móvil tiene costo adicional?",
           "answer": "No. La app móvil para vendedores está incluida desde el plan Pro, sin costo por usuario adicional."
+        },
+        {
+          "question": "¿Cómo funciona el cierre de caja?",
+          "answer": "Al cerrar el turno, el sistema calcula el efectivo esperado según el fondo inicial, las ventas y los movimientos del día. El cajero cuenta el dinero, registra el monto y DipleBill muestra la diferencia al instante. Cada cierre queda guardado con fecha, hora y responsable."
         },
         {
           "question": "¿Qué necesito para imprimir tickets?",

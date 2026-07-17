@@ -39,6 +39,23 @@ function InvoiceVisual() {
   );
 }
 
+function CashCloseVisual() {
+  return (
+    <div className={`${styles.visualPanel} glass-panel`}>
+      <div className={styles.listCard}>
+        <div className={styles.listHeader}>Cierre de caja — Caja 2</div>
+        <div className={styles.tableRow2}><span>Fondo inicial</span><span>C$2,000.00</span></div>
+        <div className={styles.tableRow2}><span>Ventas en efectivo</span><span>C$18,450.00</span></div>
+        <div className={styles.tableRow2}><span>Abonos recibidos</span><span>C$3,200.00</span></div>
+        <div className={styles.tableRow2}><span>Retiros de caja</span><span className={styles.amountDue}>− C$1,500.00</span></div>
+        <div className={`${styles.tableRow2} ${styles.rowStrong}`}><span>Efectivo esperado</span><span>C$22,150.00</span></div>
+        <div className={`${styles.tableRow2} ${styles.rowStrong}`}><span>Efectivo contado</span><span>C$22,150.00</span></div>
+        <div className={styles.cashBadge}>✓ Caja cuadrada — diferencia C$0.00</div>
+      </div>
+    </div>
+  );
+}
+
 function CreditVisual() {
   return (
     <div className={`${styles.visualPanel} glass-panel`}>
@@ -224,6 +241,7 @@ function MobileVisual() {
 
 const VISUALS: Record<string, React.ReactNode> = {
   invoice: <InvoiceVisual />,
+  cashclose: <CashCloseVisual />,
   credit: <CreditVisual />,
   inventory: <InventoryVisual />,
   branches: <BranchesVisual />,

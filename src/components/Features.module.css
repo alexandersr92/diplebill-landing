@@ -70,9 +70,20 @@
   font-size: 0.93rem;
 }
 
+@media (min-width: 901px) {
+  /* Si la última tarjeta queda sola en su fila, ocupa el ancho completo */
+  .card:last-child:nth-child(3n + 1) {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:last-child:nth-child(2n + 1) {
+    grid-column: 1 / -1;
   }
 }
 
