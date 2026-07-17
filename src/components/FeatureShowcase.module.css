@@ -1,0 +1,545 @@
+.showcaseSection {
+  padding: 7rem 2rem;
+  border-bottom: 2px solid var(--line);
+  background: var(--paper);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 640px;
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.subtitle {
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  scroll-margin-top: 6rem;
+}
+
+.blockReversed .blockContent {
+  order: 2;
+}
+
+.blockReversed .blockVisual {
+  order: 1;
+}
+
+.blockContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.3rem 0.8rem;
+  background: var(--highlight);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 2px 2px 0 rgba(32, 29, 23, 0.9);
+}
+
+.blockTitle {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.blockDescription {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.bulletList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.bulletList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.check {
+  color: var(--accent);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.blockVisual {
+  display: flex;
+  justify-content: center;
+}
+
+.visualPanel {
+  width: 100%;
+  max-width: 460px;
+  padding: 2rem;
+}
+
+.visualCentered {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* ── Ticket (facturación) ─────────────────────── */
+.ticket {
+  border: 2px dashed rgba(32, 29, 23, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--paper);
+}
+
+.ticketHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--ink);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dashed rgba(32, 29, 23, 0.3);
+}
+
+.ticketHeader span {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.ticketRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-soft);
+}
+
+.ticketDivider {
+  border-top: 2px dashed rgba(32, 29, 23, 0.3);
+}
+
+.ticketTotal {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ticketStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #9a6a00;
+  margin-top: 0.25rem;
+}
+
+.offlineDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f5c531;
+  border: 1px solid var(--line);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ── Listas genéricas (créditos, roles, vendedores) ── */
+.listCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.listHeader {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--line);
+}
+
+.listRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink);
+}
+
+.amountDue {
+  color: var(--alert);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.amountPaid {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.progressTrack {
+  height: 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--accent);
+}
+
+/* ── Tabla de inventario ─────────────────────── */
+.tableHead {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  color: var(--ink);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(32, 29, 23, 0.15);
+}
+
+.lowStock {
+  color: var(--alert);
+  font-weight: 700;
+}
+
+.transferTag {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--accent-soft);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+/* ── Sucursales ──────────────────────────────── */
+.branchGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.branchCard {
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.branchTotal {
+  background: var(--accent);
+}
+
+.branchTotal .branchName,
+.branchTotal .branchSales,
+.branchTotal .branchLabel {
+  color: var(--paper-card);
+}
+
+.branchName {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.branchSales {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.branchLabel {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+/* ── Vendedores ──────────────────────────────── */
+.sellerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sellerRank {
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background: var(--highlight);
+  border: 2px solid var(--line);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.sellerName {
+  flex: 1;
+  color: var(--ink);
+}
+
+.sellerAmount {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+/* ── Roles ───────────────────────────────────── */
+.roleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.roleName {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.roleTag {
+  font-size: 0.78rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* ── Reportes ────────────────────────────────── */
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  height: 140px;
+  padding: 0.5rem 0;
+}
+
+.chartBar {
+  flex: 1;
+  background: var(--accent-soft);
+  border: 2px solid var(--line);
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+}
+
+.chartBarActive {
+  background: var(--accent);
+}
+
+.chartFooter {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  padding-top: 0.6rem;
+  border-top: 2px solid var(--line);
+}
+
+.chartGrowth {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── WooCommerce ─────────────────────────────── */
+.syncWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.syncNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  box-shadow: var(--hard-shadow-sm);
+}
+
+.syncIcon {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0.55rem;
+  background: var(--accent);
+  color: var(--paper-card);
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.08em;
+}
+
+.syncArrows {
+  font-size: 1.75rem;
+  color: var(--ink);
+}
+
+.syncStatus {
+  text-align: center;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  margin-top: 1.25rem;
+}
+
+.syncBadge {
+  margin: 1rem auto 0;
+  width: fit-content;
+  padding: 0.4rem 0.9rem;
+  background: var(--accent-soft);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-full);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* ── App móvil ───────────────────────────────── */
+.phone {
+  width: 235px;
+  border: 3px solid var(--line);
+  border-radius: 1.75rem;
+  background: var(--paper-card);
+  overflow: hidden;
+  box-shadow: var(--hard-shadow);
+}
+
+.phoneNotch {
+  width: 90px;
+  height: 16px;
+  background: var(--line);
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+
+.phoneScreen {
+  padding: 1.25rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.phoneTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.phoneRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-soft);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(32, 29, 23, 0.15);
+}
+
+.phoneButton {
+  margin-top: 0.75rem;
+  background: var(--accent);
+  color: var(--paper-card);
+  text-align: center;
+  padding: 0.7rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  box-shadow: var(--hard-shadow-sm);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 900px) {
+  .block {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .blockReversed .blockContent {
+    order: 1;
+  }
+
+  .blockReversed .blockVisual {
+    order: 2;
+  }
+
+  .blocks {
+    gap: 5rem;
+  }
+}

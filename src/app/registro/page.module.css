@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5rem 2rem 3rem;
+  background:
+    radial-gradient(rgba(32, 29, 23, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-color: var(--paper);
+  position: relative;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: var(--paper-card);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--hard-shadow);
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.subtitle {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  background: var(--highlight);
+  color: var(--ink);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 0 rgba(32, 29, 23, 0.9);
+}
+
+.backLink {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.backLink:hover {
+  border-bottom-color: var(--accent);
+}

@@ -1,0 +1,227 @@
+.heroSection {
+  padding: 9rem 0 0;
+  border-bottom: 2px solid var(--line);
+  background:
+    radial-gradient(rgba(32, 29, 23, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  background: var(--paper-card);
+  border: 2px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badgeDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.title {
+  font-size: clamp(2.75rem, 5vw, 4.25rem);
+  line-height: 1.02;
+  font-weight: 640;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+/* ── Recibo ─────────────────────────────────── */
+.receiptWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.receipt {
+  width: 100%;
+  max-width: 330px;
+  background: var(--paper-card);
+  border: 2px solid var(--line);
+  box-shadow: var(--hard-shadow);
+  padding: 1.75rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transform: rotate(2deg);
+}
+
+.receiptHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  color: var(--ink);
+}
+
+.receiptLogo {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.receiptHeader span:not(.receiptLogo) {
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+}
+
+.receiptDivider {
+  border-top: 2px dashed rgba(32, 29, 23, 0.35);
+  margin: 0.35rem 0;
+}
+
+.receiptRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--ink);
+}
+
+.receiptTotal {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.receiptFooter {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+}
+
+.barcode {
+  height: 42px;
+  margin-top: 0.4rem;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--ink) 0 2px,
+    transparent 2px 5px,
+    var(--ink) 5px 6px,
+    transparent 6px 11px,
+    var(--ink) 11px 14px,
+    transparent 14px 17px
+  );
+}
+
+.stamp {
+  position: absolute;
+  top: 14%;
+  right: 4%;
+  padding: 0.5rem 1.1rem;
+  border: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.18em;
+  transform: rotate(-14deg);
+  background: rgba(255, 252, 244, 0.85);
+}
+
+/* ── Cinta de módulos ───────────────────────── */
+.ticker {
+  border-top: 2px solid var(--line);
+  background: var(--ink);
+  color: var(--paper);
+  overflow: hidden;
+  padding: 0.7rem 0;
+}
+
+.tickerInner {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: tickerScroll 36s linear infinite;
+}
+
+.tickerItem {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tickerStar {
+  color: var(--highlight);
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 900px) {
+  .heroSection {
+    padding-top: 7rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions :global(.btn) {
+    flex: 1;
+  }
+
+  .receipt {
+    transform: rotate(0deg);
+  }
+}

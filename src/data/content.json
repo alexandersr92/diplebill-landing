@@ -1,0 +1,334 @@
+{
+  "home": {
+    "nav": {
+      "logo": "DipleBill",
+      "links": [
+        { "label": "Características", "href": "#features" },
+        { "label": "Funciones", "href": "#funciones" },
+        { "label": "Precios", "href": "#pricing" },
+        { "label": "Preguntas", "href": "#faq" },
+        { "label": "Contacto", "href": "#contact" }
+      ],
+      "loginBtn": {
+        "label": "Iniciar Sesión",
+        "href": "https://app.diplebill.com/"
+      },
+      "registerBtn": {
+        "label": "Crear Cuenta",
+        "href": "/registro"
+      }
+    },
+    "hero": {
+      "badge": "Factura. Gestiona. Crece.",
+      "title": "Factura, controla tu inventario y vende desde cualquier lugar",
+      "subtitle": "DipleBill es el sistema de facturación e inventario para negocios que crecen: múltiples sucursales, vendedores con app móvil, créditos a clientes, reportes en tiempo real e integración con WooCommerce.",
+      "cta1": {
+        "label": "Prueba Gratis 14 Días",
+        "href": "/registro"
+      },
+      "cta2": {
+        "label": "Ver Todas las Funciones",
+        "href": "#funciones"
+      },
+      "image": "/images/hero-dashboard.png"
+    },
+    "features": {
+      "title": "Todo tu negocio en una sola plataforma",
+      "subtitle": "Nueve módulos integrados que cubren el ciclo completo de tu comercio: desde la venta hasta el reporte final.",
+      "items": [
+        {
+          "icon": "invoice",
+          "title": "Facturación",
+          "description": "Emite facturas y tickets en segundos, con impresión térmica y funcionamiento offline."
+        },
+        {
+          "icon": "credit-card",
+          "title": "Créditos",
+          "description": "Vende a crédito, registra abonos y controla las cuentas por cobrar de cada cliente."
+        },
+        {
+          "icon": "boxes",
+          "title": "Múltiples Inventarios",
+          "description": "Administra varios almacenes o bodegas con existencias independientes y transferencias entre ellos."
+        },
+        {
+          "icon": "store",
+          "title": "Múltiples Sucursales",
+          "description": "Controla todas tus tiendas desde un único panel: precios, stock y ventas por sucursal."
+        },
+        {
+          "icon": "sellers",
+          "title": "Múltiples Vendedores",
+          "description": "Cada vendedor con su propia cuenta, sus ventas registradas y su desempeño medible."
+        },
+        {
+          "icon": "users",
+          "title": "Gestión de Usuarios",
+          "description": "Roles y permisos por usuario: decide quién factura, quién anula y quién ve los reportes."
+        },
+        {
+          "icon": "chart",
+          "title": "Reportes",
+          "description": "Ventas, utilidades, inventario y cartera al día, con filtros por fecha, sucursal y vendedor."
+        },
+        {
+          "icon": "woo",
+          "title": "Integración WooCommerce",
+          "description": "Sincroniza productos, precios y existencias entre tu tienda física y tu tienda online."
+        },
+        {
+          "icon": "mobile",
+          "title": "App Móvil para Vendedores",
+          "description": "Tus vendedores toman pedidos y facturan desde el celular, dentro o fuera del local."
+        }
+      ]
+    },
+    "showcase": {
+      "title": "Conoce cada función a fondo",
+      "subtitle": "Sin letra pequeña: esto es exactamente lo que DipleBill hace por tu negocio, módulo por módulo.",
+      "blocks": [
+        {
+          "id": "facturacion",
+          "eyebrow": "Facturación",
+          "title": "Factura en segundos, con o sin internet",
+          "description": "El punto de venta de DipleBill está diseñado para la caja real: rápido con teclado o pantalla táctil, con búsqueda instantánea de productos y cobro en efectivo, tarjeta o mixto.",
+          "bullets": [
+            "Emisión de facturas y tickets de venta en segundos",
+            "Funciona offline: si se cae el internet sigues facturando y todo se sincroniza al volver la conexión",
+            "Impresión térmica directa en impresoras de 58mm y 80mm",
+            "Descuentos por producto o por factura, y anulaciones controladas por permisos"
+          ],
+          "visual": "invoice"
+        },
+        {
+          "id": "creditos",
+          "eyebrow": "Créditos y Cuentas por Cobrar",
+          "title": "Vende a crédito sin perder el control",
+          "description": "Otorga crédito a tus clientes de confianza y deja que el sistema lleve la contabilidad de la cartera: cuánto debe cada quién, desde cuándo y qué abonos ha hecho.",
+          "bullets": [
+            "Límite de crédito configurable por cliente",
+            "Registro de abonos parciales o pagos totales con su recibo",
+            "Estado de cuenta por cliente con historial completo",
+            "Reporte de cartera vencida para saber a quién cobrar primero"
+          ],
+          "visual": "credit"
+        },
+        {
+          "id": "inventario",
+          "eyebrow": "Múltiples Inventarios",
+          "title": "Cada bodega con sus propias existencias",
+          "description": "Maneja tantos almacenes como necesites: bodega central, trastienda, exhibición. Cada uno con stock independiente y movimientos trazables.",
+          "bullets": [
+            "Inventarios ilimitados con existencias separadas por almacén",
+            "Transferencias entre bodegas con registro de quién y cuándo",
+            "Alertas de stock mínimo para no quedarte sin producto",
+            "Ajustes de inventario y kardex de movimientos por producto"
+          ],
+          "visual": "inventory"
+        },
+        {
+          "id": "sucursales",
+          "eyebrow": "Múltiples Sucursales",
+          "title": "Todas tus tiendas, un solo panel",
+          "description": "Abre tu segunda o décima sucursal sin cambiar de sistema. Desde el panel administrativo ves y controlas todo el negocio en tiempo real.",
+          "bullets": [
+            "Ventas, caja e inventario independientes por sucursal",
+            "Comparativo de desempeño entre sucursales",
+            "Precios y catálogo centralizados o personalizados por tienda",
+            "Cierres de caja por sucursal con arqueo detallado"
+          ],
+          "visual": "branches"
+        },
+        {
+          "id": "vendedores",
+          "eyebrow": "Múltiples Vendedores",
+          "title": "Sabes qué vende cada miembro de tu equipo",
+          "description": "Cada venta queda asociada a un vendedor. Mide desempeño, calcula comisiones y detecta a tus mejores elementos con datos, no con intuición.",
+          "bullets": [
+            "Vendedores ilimitados con su propia sesión y clave",
+            "Ventas y devoluciones registradas por vendedor",
+            "Ranking de desempeño por día, semana o mes",
+            "Base para el cálculo de comisiones por vendedor"
+          ],
+          "visual": "sellers"
+        },
+        {
+          "id": "usuarios",
+          "eyebrow": "Gestión de Usuarios",
+          "title": "Cada quien ve solo lo que le corresponde",
+          "description": "Define roles con permisos precisos: el cajero factura, el bodeguero mueve inventario, el administrador ve todo. Nadie toca lo que no debe.",
+          "bullets": [
+            "Roles predefinidos: administrador, cajero, bodeguero, vendedor",
+            "Permisos granulares por módulo y por acción (crear, anular, ver reportes)",
+            "Registro de actividad: quién hizo qué y cuándo",
+            "Acceso restringido por sucursal para cada usuario"
+          ],
+          "visual": "users"
+        },
+        {
+          "id": "reportes",
+          "eyebrow": "Reportes",
+          "title": "Decisiones con números, no con corazonadas",
+          "description": "Toda la operación de tu negocio convertida en reportes claros que puedes filtrar por fecha, sucursal, vendedor o producto, y exportar cuando lo necesites.",
+          "bullets": [
+            "Ventas diarias, semanales y mensuales con comparativos",
+            "Utilidades por producto y por categoría",
+            "Valorización de inventario y productos de baja rotación",
+            "Estado de cartera: cuentas por cobrar y abonos recibidos"
+          ],
+          "visual": "reports"
+        },
+        {
+          "id": "woocommerce",
+          "eyebrow": "Integración WooCommerce",
+          "title": "Tu tienda física y tu tienda online, siempre sincronizadas",
+          "description": "Conecta DipleBill con WooCommerce y olvídate de mantener dos catálogos. Lo que vendes en el local descuenta stock de tu web, y viceversa.",
+          "bullets": [
+            "Sincronización de productos, precios y existencias",
+            "Los pedidos de WooCommerce entran a DipleBill automáticamente",
+            "Stock actualizado en ambos canales para no vender lo que no tienes",
+            "Configuración guiada: conecta tu tienda en minutos"
+          ],
+          "visual": "woocommerce"
+        },
+        {
+          "id": "app-movil",
+          "eyebrow": "App Móvil",
+          "title": "Tus vendedores facturan desde el celular",
+          "description": "La aplicación móvil de DipleBill pone el punto de venta en el bolsillo de tu equipo: perfecta para vendedores de ruta, preventa o atención en piso.",
+          "bullets": [
+            "Toma de pedidos y facturación desde el teléfono",
+            "Consulta de precios, existencias y estado de cuenta de clientes",
+            "Registro de cobros y abonos en ruta",
+            "Todo sincronizado con el panel central en tiempo real"
+          ],
+          "visual": "mobile"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Planes Simples y Transparentes",
+      "subtitle": "Todos los planes incluyen 14 días de prueba gratis. Sin tarjeta de crédito, sin permanencia.",
+      "plans": [
+        {
+          "name": "Básico",
+          "price": "C$550",
+          "period": "/ mes",
+          "features": [
+            "1 Sucursal",
+            "Usuarios y vendedores ilimitados",
+            "Facturación e impresión térmica",
+            "Gestión de inventario",
+            "Reportes de ventas"
+          ],
+          "cta": "Prueba de 14 días",
+          "href": "/registro"
+        },
+        {
+          "name": "Pro",
+          "price": "C$1,290",
+          "period": "/ mes",
+          "isPopular": true,
+          "features": [
+            "Hasta 3 sucursales",
+            "Todo lo del plan Básico",
+            "Ventas offline",
+            "Créditos y cuentas por cobrar",
+            "Múltiples inventarios y transferencias",
+            "App móvil para vendedores"
+          ],
+          "cta": "Prueba de 14 días",
+          "href": "/registro"
+        },
+        {
+          "name": "Empresarial",
+          "price": "C$2,200",
+          "period": "/ mes",
+          "features": [
+            "Sucursales ilimitadas",
+            "Todo lo del plan Pro",
+            "Integración con WooCommerce",
+            "Reportes avanzados y comparativos",
+            "Soporte prioritario"
+          ],
+          "cta": "Prueba de 14 días",
+          "href": "/registro"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Lo que todo el mundo pregunta antes de empezar.",
+      "items": [
+        {
+          "question": "¿Cómo funciona la prueba gratuita de 14 días?",
+          "answer": "Creas tu cuenta con tu correo o con Google y tienes acceso completo a todas las funciones de tu plan durante 14 días. No pedimos tarjeta de crédito y puedes cancelar en cualquier momento sin costo."
+        },
+        {
+          "question": "¿Qué pasa si se va el internet mientras vendo?",
+          "answer": "Nada: DipleBill sigue facturando en modo offline. Todas las ventas se guardan localmente y se sincronizan automáticamente con el servidor en cuanto vuelve la conexión."
+        },
+        {
+          "question": "¿Puedo manejar varias sucursales con inventarios separados?",
+          "answer": "Sí. Cada sucursal tiene su propia caja, su inventario y sus vendedores, y tú lo supervisas todo desde un único panel administrativo. También puedes transferir mercancía entre bodegas."
+        },
+        {
+          "question": "¿Cómo funciona la integración con WooCommerce?",
+          "answer": "Conectas tu tienda WooCommerce desde la configuración de DipleBill. A partir de ahí, productos, precios y existencias se mantienen sincronizados, y los pedidos online entran directo a tu sistema."
+        },
+        {
+          "question": "¿La app móvil tiene costo adicional?",
+          "answer": "No. La app móvil para vendedores está incluida desde el plan Pro, sin costo por usuario adicional."
+        },
+        {
+          "question": "¿Qué necesito para imprimir tickets?",
+          "answer": "Una impresora térmica de 58mm u 80mm conectada a tu computadora. DipleBill imprime directamente, sin configuraciones complicadas."
+        },
+        {
+          "question": "¿Mis datos están seguros?",
+          "answer": "Sí. Tu información viaja cifrada, se respalda automáticamente y solo los usuarios que tú autorices pueden acceder a ella según los permisos que les asignes."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Empieza a facturar hoy mismo",
+      "subtitle": "Crea tu cuenta en menos de un minuto, con tu correo o con Google. 14 días gratis, sin tarjeta de crédito.",
+      "button": {
+        "label": "Crear Mi Cuenta Gratis",
+        "href": "/registro"
+      },
+      "note": "Sin permanencia · Cancela cuando quieras · Soporte en español"
+    },
+    "footer": {
+      "description": "El sistema de facturación e inventario para negocios que crecen.",
+      "columns": [
+        {
+          "title": "Producto",
+          "links": [
+            { "label": "Características", "href": "#features" },
+            { "label": "Funciones a detalle", "href": "#funciones" },
+            { "label": "Precios", "href": "#pricing" },
+            { "label": "Preguntas frecuentes", "href": "#faq" }
+          ]
+        },
+        {
+          "title": "Cuenta",
+          "links": [
+            { "label": "Crear cuenta", "href": "/registro" },
+            { "label": "Iniciar sesión", "href": "https://app.diplebill.com/" }
+          ]
+        }
+      ],
+      "contact": {
+        "title": "Contacto",
+        "email": "hola@diplebill.com",
+        "whatsapp": "+1 (555) 123-4567"
+      },
+      "copyright": "© 2026 DipleBill. Todos los derechos reservados.",
+      "socials": [
+        { "name": "Facebook", "url": "#" },
+        { "name": "Instagram", "url": "#" }
+      ]
+    }
+  }
+}

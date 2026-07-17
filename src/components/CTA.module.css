@@ -1,0 +1,51 @@
+.ctaSection {
+  padding: 6rem 2rem;
+  background: var(--paper);
+}
+
+.panel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.glow {
+  display: none;
+}
+
+.title {
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  letter-spacing: -0.02em;
+  color: var(--paper-card);
+}
+
+.subtitle {
+  color: rgba(255, 252, 244, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 550px;
+}
+
+.bigButton {
+  font-size: 1.05rem;
+  padding: 1rem 2.5rem;
+  background: var(--paper-card);
+  color: var(--ink);
+}
+
+.bigButton:hover {
+  background: var(--paper);
+}
+
+.note {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: rgba(255, 252, 244, 0.75);
+}
