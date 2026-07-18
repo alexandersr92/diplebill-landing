@@ -4,6 +4,12 @@
   gap: 1.5rem;
 }
 
+.googleButtonSlot {
+  display: flex;
+  justify-content: center;
+  min-height: 44px;
+}
+
 .googleButton {
   display: flex;
   align-items: center;
