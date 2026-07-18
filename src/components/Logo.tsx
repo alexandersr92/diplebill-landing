@@ -7,19 +7,20 @@ interface LogoProps {
 
 /**
  * Los archivos oficiales de marca viven en /public:
- *  - logo-horizontal.png → isotipo + wordmark (fondos claros)
- *  - logo-mark.png       → isotipo solo
- * El favicon es src/app/icon.png. Para actualizar el logo, reemplaza esos archivos.
+ *  - logo-horizontal.svg → isotipo + wordmark (fondos claros)
+ *  - logo-mark.svg       → isotipo solo
+ * El favicon es src/app/icon.png (PNG porque Safari no soporta favicons SVG).
+ * Para actualizar el logo, reemplaza esos archivos.
  */
 
-const MARK_RATIO = 236 / 256;
-const HORIZONTAL_RATIO = 952 / 240;
+const MARK_RATIO = 324.58 / 351.77;
+const HORIZONTAL_RATIO = 1396.71 / 351.77;
 
 export function LogoMark({ size = 34 }: { size?: number }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src="/logo-mark.png"
+      src="/logo-mark.svg"
       width={Math.round(size * MARK_RATIO)}
       height={size}
       alt=""
@@ -32,7 +33,7 @@ export default function Logo({ variant = 'dark', size = 34 }: LogoProps) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src="/logo-horizontal.png"
+        src="/logo-horizontal.svg"
         width={Math.round(size * HORIZONTAL_RATIO)}
         height={size}
         alt="DipleBill"
