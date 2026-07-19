@@ -67,6 +67,16 @@
   line-height: 1.5;
 }
 
+.termsLink {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.termsLink:hover {
+  color: var(--accent-hover);
+}
+
 .form {
   display: flex;
   flex-direction: column;

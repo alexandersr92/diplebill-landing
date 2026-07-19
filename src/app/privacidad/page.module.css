@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem 2rem 4rem;
+  background: radial-gradient(rgba(32, 29, 23, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-color: var(--paper);
+  position: relative;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: var(--paper-card);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--hard-shadow);
+  padding: 3rem;
+  width: 100%;
+  max-width: 760px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed var(--line);
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.updated {
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.section {
+  margin-bottom: 1.75rem;
+}
+
+.section h2 {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.section p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 0.6rem;
+}
+
+.section ul {
+  list-style: disc;
+  margin: 0 0 0.6rem 1.4rem;
+}
+
+.section li {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 0.4rem;
+}
+
+.section strong {
+  color: var(--ink);
+}
+
+.section a {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-soft);
+}
+
+.section a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.backLink {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.backLink:hover {
+  border-bottom-color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 4.5rem 1rem 2.5rem;
+  }
+
+  .card {
+    padding: 2rem 1.25rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
