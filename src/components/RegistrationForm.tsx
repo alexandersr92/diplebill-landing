@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import styles from './RegistrationForm.module.css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -297,7 +298,15 @@ export default function RegistrationForm() {
         </button>
 
         <p className={styles.terms}>
-          Al crear tu cuenta aceptas nuestros términos de servicio y política de privacidad.
+          Al crear tu cuenta aceptas nuestros{' '}
+          <Link href="/terminos" className={styles.termsLink}>
+            términos y condiciones
+          </Link>{' '}
+          y nuestra{' '}
+          <Link href="/privacidad" className={styles.termsLink}>
+            política de privacidad
+          </Link>
+          .
         </p>
       </form>
     </div>
