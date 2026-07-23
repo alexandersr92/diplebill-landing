@@ -7,6 +7,7 @@ export interface LandingPlanCard {
   name: string;
   priceMonthly: number;
   priceAnnual: number;
+  currency?: string;
   isPopular?: boolean;
   features: string[];
   cta: string;
@@ -17,6 +18,7 @@ interface ApiPlan {
   name: string;
   price_monthly: number | string;
   price_annual: number | string;
+  currency: string | null;
   is_featured: boolean;
   features: string[] | null;
 }
@@ -48,6 +50,7 @@ export async function getLandingPlans(
       name: plan.name,
       priceMonthly: toNumber(plan.price_monthly),
       priceAnnual: toNumber(plan.price_annual),
+      currency: plan.currency ?? 'NIO',
       isPopular: Boolean(plan.is_featured),
       features: Array.isArray(plan.features) ? plan.features : [],
       cta: DEFAULT_CTA,

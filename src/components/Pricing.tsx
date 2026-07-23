@@ -8,6 +8,7 @@ interface Plan {
   name: string;
   priceMonthly: number;
   priceAnnual: number;
+  currency?: string;
   isPopular?: boolean;
   features: string[];
   cta: string;
@@ -24,7 +25,13 @@ interface PricingProps {
 
 type Cycle = 'monthly' | 'annual';
 
-const formatPrice = (value: number) => `C$${value.toLocaleString('en-US')}`;
+// Símbolo por moneda (la que se configura en cada plan desde /admin/plans).
+const CURRENCY_SYMBOLS: Record<string, string> = { NIO: 'C$', USD: '$' };
+
+const formatPrice = (value: number, currency = 'NIO') => {
+  const symbol = CURRENCY_SYMBOLS[currency] ?? `${currency} `;
+  return `${symbol}${value.toLocaleString('en-US')}`;
+};
 
 export default function Pricing({ data }: PricingProps) {
   const [cycle, setCycle] = useState<Cycle>('monthly');
@@ -85,7 +92,7 @@ export default function Pricing({ data }: PricingProps) {
 
                 <h3 className={styles.planName}>{plan.name}</h3>
                 <div className={styles.priceContainer}>
-                  <span className={styles.price}>{formatPrice(price)}</span>
+                  <span className={styles.price}>{formatPrice(price, plan.currency)}</span>
                   <span className={styles.period}>{cycle === 'annual' ? '/ año' : '/ mes'}</span>
                 </div>
                 {cycle === 'annual' && saving > 0 && (
@@ -97,7 +104,7 @@ export default function Pricing({ data }: PricingProps) {
                       color: '#34D399',
                     }}
                   >
-                    Ahorras {formatPrice(saving)} al año
+                    Ahorras {formatPrice(saving, plan.currency)} al año
                   </p>
                 )}
 
