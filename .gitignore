@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+# Solo URLs públicas (NEXT_PUBLIC_* se inyectan en el bundle del cliente).
+# Evita que el build de producción caiga a los defaults de localhost.
+!.env.production
 
 # vercel
 .vercel
