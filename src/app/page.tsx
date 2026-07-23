@@ -8,9 +8,13 @@ import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import contentData from '@/data/content.json';
+import { getLandingPlans, type LandingPlanCard } from '@/lib/getLandingPlans';
 
-export default function Home() {
+export default async function Home() {
   const { nav, hero, features, showcase, pricing, faq, cta, footer } = contentData.home;
+
+  // Planes desde el backend (fuente de verdad); si el API falla, los de content.json.
+  const plans = await getLandingPlans(pricing.plans as LandingPlanCard[]);
 
   return (
     <>
@@ -19,7 +23,7 @@ export default function Home() {
         <Hero data={hero} />
         <Features data={features} />
         <FeatureShowcase data={showcase} />
-        <Pricing data={pricing} />
+        <Pricing data={{ ...pricing, plans }} />
         <FAQ data={faq} />
         <CTA data={cta} />
       </main>
