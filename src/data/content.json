@@ -245,8 +245,8 @@
       "plans": [
         {
           "name": "Básico",
-          "price": "C$550",
-          "period": "/ mes",
+          "priceMonthly": 550,
+          "priceAnnual": 5500,
           "features": [
             "1 Sucursal",
             "Usuarios y vendedores ilimitados",
@@ -260,8 +260,8 @@
         },
         {
           "name": "Pro",
-          "price": "C$1,290",
-          "period": "/ mes",
+          "priceMonthly": 1290,
+          "priceAnnual": 12900,
           "isPopular": true,
           "features": [
             "Hasta 3 sucursales",
@@ -276,8 +276,8 @@
         },
         {
           "name": "Empresarial",
-          "price": "C$2,200",
-          "period": "/ mes",
+          "priceMonthly": 2200,
+          "priceAnnual": 22000,
           "features": [
             "Sucursales ilimitadas",
             "Todo lo del plan Pro",
